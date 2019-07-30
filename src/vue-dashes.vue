@@ -2,14 +2,13 @@
   <svg
     class="dashes"
     xmlns="http://www.w3.org/2000/svg"
-    :viewBox="viewBox"
     :style="svgStyles"
   >
     <line
       x1="0"
-      y1="0"
+      :y1="dashHeight/2"
       :x2="svgWidth"
-      :y2="dashHeight"
+      :y2="dashHeight/2"
       :style="lineStyles"
     />
   </svg>
@@ -22,14 +21,10 @@ export default {
     color: {
       type: String,
       default: '#000',
-      validator: (value) => {
-        const isValidHex = /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(value.trim())
-        return isValidHex
-      },
     },
     numDashes: {
       type: Number,
-      default: 3,
+      default: 10,
       validator: (value) => value > 0,
     },
     dashHeight: {
@@ -38,17 +33,18 @@ export default {
     },
     dashLength: {
       type: Number,
-      default: 2,
+      default: 1,
     },
     spaceLength: {
       type: Number,
-      default: 2,
+      default: 1,
     },
   },
   data() {
     return {
       lineStyles: {
         stroke: this.color,
+        'stroke-width': this.dashHeight,
         'stroke-dasharray': `${this.dashLength} ${this.spaceLength}`,
       },
     }
@@ -57,14 +53,10 @@ export default {
     svgWidth() {
       return this.numDashes * this.dashLength + (this.numDashes - 1) * this.spaceLength
     },
-    viewBox() {
-      return `0 0 ${this.svgWidth} ${this.dashHeight}`
-    },
     svgStyles() {
       return {
         width: this.svgWidth,
-        // The svg needs to be slightly bigger, otherwise the dashes don't fully render
-        height: this.dashHeight + 1,
+        height: this.dashHeight,
       }
     },
   },
