@@ -45,11 +45,15 @@ jobs:
       - run:
           name: Build the project
           command: npm run build
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
 
   deploy:
     <<: *defaults
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Release
           command: npm run semantic-release || true
