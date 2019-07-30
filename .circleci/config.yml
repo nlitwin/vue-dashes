@@ -54,7 +54,7 @@ jobs:
     steps:
       - run:
           name: Release
-          command: npm run semantic-release || true
+          command: pwd && ls -la || true
 
 workflows:
   version: 2
@@ -64,6 +64,3 @@ workflows:
       - deploy:
           requires:
             - build
-          filters:
-            branches:
-              only: master
