@@ -17,6 +17,7 @@ jobs:
           - DISPLAY=":0.0" SSH_ASKPASS="/tmp/askpass" setsid ssh-add /tmp/git_deploy_key </dev/null
 
       - checkout
+
       - restore_cache:
           keys:
             - v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}
@@ -36,6 +37,7 @@ jobs:
       - run:
           name: Run linting
           command: npm run lint
+
       - run:
           name: Run unit tests
           command: npm test
