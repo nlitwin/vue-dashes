@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`vue-dashes renders 1`] = `
+exports[`vue-dashes renders with custom props 1`] = `
+<svg xmlns="http://www.w3.org/2000/svg">
+  <line x1="0" y1="5" x2="23" y2="5" style="stroke: papayawhip; stroke-width: 10; stroke-dasharray: 3 2;"></line>
+</svg>
+`;
+
+exports[`vue-dashes renders with default props 1`] = `
 <svg xmlns="http://www.w3.org/2000/svg">
   <line x1="0" y1="0.5" x2="19" y2="0.5" style="stroke: #000; stroke-width: 1; stroke-dasharray: 1 1;"></line>
 </svg>
