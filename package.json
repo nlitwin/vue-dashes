@@ -21,7 +21,6 @@
     "test:unit": "jest",
     "lint": "eslint . --ext .js,.vue",
     "lint:fix": "npm run lint -- --fix",
-    "prepublishOnly": "npm run test && npm run build",
     "serve": "vue serve ./src/vue-dashes.vue",
     "semantic-release": "semantic-release"
   },
