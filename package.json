@@ -1,0 +1,63 @@
+{
+  "name": "vue-dashes",
+  "version": "0.1.0",
+  "description": "A Vue component for creating dashes",
+  "author": "Nicholas Litwin <nicklitwin88@gmail.com>",
+  "main": "dist/vue-dashes.ssr.js",
+  "module": "dist/vue-dashes.esm.js",
+  "unpkg": "dist/vue-dashes.min.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "test": "npm run test:unit",
+    "test:unit": "jest",
+    "lint": "eslint . --ext .js,.vue",
+    "lint:fix": "npm run lint -- --fix",
+    "dev": "cross-env NODE_ENV=development rollup --config build/rollup.config.es.js --watch",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-jest": "^22.14.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "jest": "^24.8.0",
+    "jest-serializer-vue": "^2.0.2",
+    "minimist": "^1.2.0",
+    "rollup": "^1.12.1",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-vue": "^5.0.0",
+    "vue": "^2.6.10",
+    "vue-jest": "^3.0.4",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "bugs": {
+    "url": "https://github.com/nlitwin/vue-dashes/issues"
+  },
+  "homepage": "https://github.com/nlitwin/vue-dashes#readme",
+  "keywords": [
+    "vue",
+    "dashes",
+    "svg"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlitwin/vue-dashes.git"
+  }
+}
