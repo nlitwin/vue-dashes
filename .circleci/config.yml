@@ -1,8 +1,13 @@
 version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: 'circleci/node:latest'
+
 jobs:
   build:
-    docker:
-      - image: 'circleci/node:latest'
+    <<: *defaults
     steps:
       - checkout
       - run:
@@ -42,8 +47,7 @@ jobs:
           command: npm run build
 
   deploy:
-    docker:
-      - image: 'circleci/node:latest'
+    <<: *defaults
     steps:
       - checkout
       - run:
