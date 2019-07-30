@@ -1,9 +1,5 @@
 <template>
-  <svg
-    class="dashes"
-    xmlns="http://www.w3.org/2000/svg"
-    :style="svgStyles"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" :style="svgStyles">
     <line
       x1="0"
       :y1="dashHeight/2"
