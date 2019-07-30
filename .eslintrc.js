@@ -31,5 +31,10 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'comma-style': [1, 'last'],
     'comma-dangle': [1, 'always-multiline'],
+    semi: [1, "never"],
+    quotes: [1, "single", {
+      avoidEscape: true,
+      allowTemplateLiterals: true,
+    }],
   }
 }
