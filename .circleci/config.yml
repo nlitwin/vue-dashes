@@ -50,9 +50,10 @@ jobs:
   deploy:
     docker:
       - image: 'circleci/node:latest'
+    working_directory: ~/repo
     steps:
       - run:
-          name: release
+          name: Release
           command: npm run semantic-release || true
 
 workflows:
@@ -65,5 +66,4 @@ workflows:
             - build
           filters:
             branches:
-              only:
-                - master
+              only: master
