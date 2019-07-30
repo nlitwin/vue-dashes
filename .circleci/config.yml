@@ -1,8 +1,13 @@
 version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: 'circleci/node:latest'
+
 jobs:
   build:
-    docker:
-      - image: 'circleci/node:latest'
+    <<: *defaults
     steps:
       - checkout
       - run:
@@ -40,12 +45,15 @@ jobs:
       - run:
           name: Build the project
           command: npm run build
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
 
   deploy:
-    docker:
-      - image: 'circleci/node:latest'
+    <<: *defaults
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Release
           command: npm run semantic-release || true
