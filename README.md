@@ -1,4 +1,9 @@
-# vue-dashes
+<h1 align="center">vue-dashes</h1>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/v-tooltip"><img src="https://img.shields.io/npm/v/vue-dashes.svg" /></a>
+  <img src="https://circleci.com/gh/nlitwin/vue-dashes/tree/master.svg?style=svg" />
+</p>
 
 A Vue component for creating dashes of different sizes using SVG.
 
