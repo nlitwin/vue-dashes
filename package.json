@@ -61,7 +61,8 @@
   "keywords": [
     "vue",
     "dashes",
-    "svg"
+    "svg",
+    "component"
   ],
   "license": "MIT",
   "repository": {

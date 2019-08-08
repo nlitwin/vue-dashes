@@ -2,7 +2,7 @@
 
 A Vue component for creating dashes
 
-### Install
+### Installation
 
 ```bash
 npm install --save vue-dashes
@@ -34,7 +34,7 @@ Then use the component
 
 | Name | Required | Type | Default | Description |
 | --- | --- | --- | --- | --- |
-| color | false | String | '#000' | color of the dashes |
+| color | false | String | '#000' | hex code or HTML color name of the dashes |
 | numDashes | false | Number | 10 | number of dashes |
 | dashHeight | false | Number | 1 | the height of the dashes |
 | dashLength | false | Number | 1 | the length of the dashes |
