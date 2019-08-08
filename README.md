@@ -39,3 +39,24 @@ Then use the component
 | dashHeight | false | Number | 1 | the height of the dashes |
 | dashLength | false | Number | 1 | the length of the dashes |
 | spaceLength | false | Number | 1 | the length of the spaces between dashes |
+
+### Contributing
+
+Pull requests are welcomed and encouraged!
+
+To develop locally:
+
+```bash
+npm start
+```
+
+Make sure linting passes and unit tests are added or updated before submitting your pull request:
+
+```bash
+npm run lint
+```
+
+```bash
+npm test
+npm run test:watch
+```
