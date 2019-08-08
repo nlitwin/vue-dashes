@@ -1,4 +1,4 @@
-# v-dashes
+# vue-dashes
 
 A Vue component for creating dashes
 
@@ -13,15 +13,15 @@ npm install --save vue-dashes
 Include the plugin in your `main.js` file.
 
 ```javascript
-import VDashes from 'vue-dashes'
+import VueDashes from 'vue-dashes'
 
-Vue.use(VDashes)
+Vue.use(VueDashes)
 ```
 
 Then use the component
 
 ```html
-<v-dashes
+<vue-dashes
   color="papayawhip"
   num-dashes="5"
   dash-height="6"

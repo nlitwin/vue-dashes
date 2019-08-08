@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'VDashes',
+  name: 'VueDashes',
   props: {
     color: {
       type: String,
