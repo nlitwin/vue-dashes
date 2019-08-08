@@ -1,6 +1,6 @@
 # vue-dashes
 
-A Vue component for creating dashes
+A Vue component for creating dashes of different sizes using SVG.
 
 ### Installation
 
