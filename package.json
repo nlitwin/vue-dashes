@@ -22,6 +22,7 @@
     "lint": "eslint . --ext .js,.vue",
     "lint:fix": "npm run lint -- --fix",
     "serve": "vue serve ./src/vue-dashes.vue",
+    "start": "npm run serve",
     "semantic-release": "semantic-release"
   },
   "dependencies": {},
