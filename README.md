@@ -31,10 +31,10 @@ Then use the component
 ```html
 <vue-dashes
   color="papayawhip"
-  num-dashes="5"
-  dash-height="6"
-  dash-length="3"
-  space-length="2"
+  :num-dashes="5"
+  :dash-height="6"
+  :dash-length="3"
+  :space-length="2"
 />
 ```
 
