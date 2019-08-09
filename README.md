@@ -1,8 +1,14 @@
-# v-dashes
+<h1 align="center">vue-dashes</h1>
 
-A Vue component for creating dashes
+<p align="center">
+  <a href="https://www.npmjs.com/package/v-tooltip"><img src="https://img.shields.io/npm/v/vue-dashes.svg" /></a>
+  <img src="https://circleci.com/gh/nlitwin/vue-dashes/tree/master.svg?style=svg" />
+</p>
 
-### Install
+
+<p align="center">A Vue component for creating dashes of different sizes using SVG.</p>
+
+### Installation
 
 ```bash
 npm install --save vue-dashes
@@ -13,15 +19,15 @@ npm install --save vue-dashes
 Include the plugin in your `main.js` file.
 
 ```javascript
-import VDashes from 'vue-dashes'
+import VueDashes from 'vue-dashes'
 
-Vue.use(VDashes)
+Vue.use(VueDashes)
 ```
 
 Then use the component
 
 ```html
-<v-dashes
+<vue-dashes
   color="papayawhip"
   num-dashes="5"
   dash-height="6"
@@ -34,8 +40,29 @@ Then use the component
 
 | Name | Required | Type | Default | Description |
 | --- | --- | --- | --- | --- |
-| color | false | String | '#000' | color of the dashes |
+| color | false | String | '#000' | hex code or HTML color name of the dashes |
 | numDashes | false | Number | 10 | number of dashes |
 | dashHeight | false | Number | 1 | the height of the dashes |
 | dashLength | false | Number | 1 | the length of the dashes |
 | spaceLength | false | Number | 1 | the length of the spaces between dashes |
+
+### Contributing
+
+Pull requests are welcomed and encouraged!
+
+To develop locally:
+
+```bash
+npm start
+```
+
+Make sure linting passes and unit tests are added or updated before submitting your pull request:
+
+```bash
+npm run lint
+```
+
+```bash
+npm test
+npm run test:watch
+```

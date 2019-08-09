@@ -1,14 +1,14 @@
 import { shallowMount } from '@vue/test-utils'
-import VDashes from './vue-dashes.vue'
+import VueDashes from './vue-dashes.vue'
 
 describe('vue-dashes', () => {
   it('renders with default props', () => {
-    const wrapper = shallowMount(VDashes)
+    const wrapper = shallowMount(VueDashes)
     expect(wrapper.html()).toMatchSnapshot()
   })
 
   it('renders with custom props', () => {
-    const wrapper = shallowMount(VDashes, {
+    const wrapper = shallowMount(VueDashes, {
       propsData: {
         color: 'papayawhip',
         numDashes: 5,
@@ -21,7 +21,7 @@ describe('vue-dashes', () => {
   })
 
   it('calculates the svg width', () => {
-    const wrapper = shallowMount(VDashes, {
+    const wrapper = shallowMount(VueDashes, {
       propsData: {
         numDashes: 3,
         dashLength: 2,
