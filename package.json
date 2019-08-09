@@ -8,6 +8,7 @@
   "unpkg": "dist/vue-dashes.min.js",
   "files": [
     "dist/*",
+    "example/*",
     "src/**/*.vue"
   ],
   "scripts": {
@@ -21,7 +22,7 @@
     "test:unit": "jest",
     "lint": "eslint . --ext .js,.vue",
     "lint:fix": "npm run lint -- --fix",
-    "serve": "vue serve ./src/vue-dashes.vue",
+    "serve": "vue serve ./example/app.vue",
     "start": "npm run serve",
     "semantic-release": "semantic-release"
   },
