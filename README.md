@@ -5,7 +5,8 @@
   <img src="https://circleci.com/gh/nlitwin/vue-dashes/tree/master.svg?style=svg" />
 </p>
 
-A Vue component for creating dashes of different sizes using SVG.
+
+<p align="center">A Vue component for creating dashes of different sizes using SVG.</p>
 
 ### Installation
 
