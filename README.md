@@ -65,6 +65,5 @@ npm run lint
 ```
 
 ```bash
-npm test
 npm run test:watch
 ```
