@@ -1,6 +1,6 @@
 {
   "name": "vue-dashes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Vue component for creating dashes",
   "author": "Nicholas Litwin <nicklitwin88@gmail.com>",
   "main": "dist/vue-dashes.ssr.js",
