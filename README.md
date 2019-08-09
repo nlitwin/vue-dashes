@@ -8,6 +8,8 @@
 
 <p align="center">A Vue component for creating dashes of different sizes using SVG.</p>
 
+![image](https://user-images.githubusercontent.com/5829188/62751319-1709a400-ba18-11e9-9207-8b5cd33a3b7f.png)
+
 ### Installation
 
 ```bash
