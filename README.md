@@ -3,6 +3,7 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/v-tooltip"><img src="https://img.shields.io/npm/v/vue-dashes.svg" /></a>
   <img src="https://circleci.com/gh/nlitwin/vue-dashes/tree/master.svg?style=svg" />
+  <a href="https://coveralls.io/github/nlitwin/vue-dashes"><img src="https://coveralls.io/repos/github/nlitwin/vue-dashes/badge.svg" alt="Coverage Status" /></a>
 </p>
 
 
